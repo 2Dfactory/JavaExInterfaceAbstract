@@ -65,7 +65,7 @@ public abstract class Personnage {
 	}
 
 	/**
-	 * Redéfinit le mode d'adminstration des soins du personnage
+	 * Redéfinit le mode d'administration des soins du personnage
 	 * @param soin
 	 */
 	public void setSoin(Soin soin) {
