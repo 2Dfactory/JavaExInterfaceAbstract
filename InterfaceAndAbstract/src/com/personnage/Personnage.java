@@ -2,6 +2,7 @@ package com.personnage;
 
 import com.comportement.perso.AucunSoin;
 import com.comportement.perso.Deplacement;
+import com.comportement.perso.Dialoguer;
 import com.comportement.perso.EspritCombatif;
 import com.comportement.perso.Marcher;
 import com.comportement.perso.Pacifiste;

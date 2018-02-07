@@ -1,3 +1,4 @@
+import com.comportement.perso.Dialoguer;
 import com.personnage.Chirugien;
 import com.personnage.Civil;
 import com.personnage.Guerrier;
@@ -16,8 +17,27 @@ public class Test {
 	      tPers[i].combattre();
 	      tPers[i].seDeplacer();
 	      tPers[i].soigner();
-	    }	
+	    }
+	    
+	    //Essai avec classe anonyme
+	    System.out.println("-------------------- Test avec classe anonyme -------------------");
+		Dialoguer d = new Dialoguer() {
+			
+			@Override
+			public void Parler(String question) {
 
+				System.out.println("Tu as dis : " + question);
+				
+			}
+		};
+
+		d.Parler("Bonjour");
+		
+		//Essai avec lambda
+	    System.out.println("-------------------- Test avec lambda -------------------");
+	    
+	    Dialoguer d1 = (s) -> System.out.println("Tu as dis : " + s);
+		d1.Parler("Bonjour");
 	}
 
 }
